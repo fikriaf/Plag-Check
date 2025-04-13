@@ -1,31 +1,35 @@
 # Check Plagiarism Script
 
-Script ini digunakan untuk mengecek plagiarisme menggunakan API Dolos.
+Script used to check plagiarism using the Dolos API.
 
-## Fitur
-- Membuat file ZIP dari file teks yang ditentukan.
-- Mengirim file ZIP ke API Dolos.
-- Mendapatkan URL laporan plagiarisme dalam bentuk HTML.
+## Features
 
-## Prasyarat
-Pastikan bahwa Anda memiliki library berikut terinstal:
+- Creates a ZIP file from the specified text file.
+- Sends the ZIP file to the Dolos API.
+- Gets the plagiarism report URL in HTML format.
+
+## Prerequisites
+
+Make sure you have the following libraries installed:
 - `requests`
-- `zipfile` (bagian dari Python standard library)
-- `os` (bagian dari Python standard library)
+- `zipfile` (part of Python standard library)
+- `os` (part of Python standard library)
 
-Untuk menginstal `requests`, gunakan perintah berikut:
-
+To install `requests`, use the following command:
 ```bash
 pip install requests
 ```
-## Cara penggunaan
-- Masukkan teks yang ingin di scan ke dalam file text.txt
-- Kemudian, jalankan program menggunakan perintah berikut:
+
+## How to Use
+
+- Enter the text you want to scan into the text.txt file
+- Then, run the program using the following command:
 ```bash
 python plag.py
 ```
 
-## Catatan
-- API Dolos membutuhkan file ZIP untuk proses pengiriman.
-- Pastikan file teks yang ingin diperiksa sudah ada dan path-nya benar.
-- URL laporan akan dikembalikan jika proses berhasil.
+## Notes
+
+- The Dolos API requires a ZIP file for the submission process.
+- Make sure the text file you want to check already exists and its path is correct.
+- The report URL will be returned if the process is successful.
